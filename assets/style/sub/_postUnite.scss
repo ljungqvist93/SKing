@@ -1,0 +1,50 @@
+#postPage{
+	position: relative;
+	header {
+		color:#2d3436;
+		h1{
+			font-family: 'Abril Fatface', cursive;
+			font-weight:400;
+		}
+	}
+
+	#body{
+		margin-top: 30px;
+		@import '../editStyle';
+	}
+}
+
+.xlarge{
+	max-width:100% !important;
+	padding: 40px 0;
+	img{
+		width:100%;
+	}
+}
+
+.llarge{
+	max-width:928px !important;
+	margin:auto;
+	img{
+		width: 100%;
+	}
+}
+
+header{
+	max-width:674px;
+	margin:auto;
+}
+
+#tags{
+	max-width:674px;
+	margin:auto;
+	margin-top: 30px;
+	ul{
+		li{
+			font-family: 'Montserrat', sans-serif;
+			font-size:.9em;
+			margin-right: 15px;
+			color:#333;
+		}
+	}
+}

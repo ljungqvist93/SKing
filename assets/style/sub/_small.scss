@@ -1,0 +1,29 @@
+
+#small{
+	@media screen and (min-width:911px){
+		margin-top: 50px;
+	}
+	header{
+		h1{
+			@media screen and (min-width:1100px){
+				font-size:3.3em;
+			}
+		}
+	}
+	picture{
+		display: block;
+		max-width:1000px;
+		margin:auto;
+		img{
+			width: 100%;
+		}
+	}
+	#pContent{
+		picture{
+			display: block;
+			img{
+				width:100%;
+			}
+		}
+	}
+}

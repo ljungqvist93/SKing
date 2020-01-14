@@ -1,0 +1,21 @@
+@import 'sub/topper';
+@import 'sub/large';
+@import 'sub/twosides';
+@import 'sub/small';
+@import 'sub/postUnite';
+@import 'sub/editPost';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.inline{
+	li{
+		display: inline-block;
+	}
+}
+
+a{
+	color:#16a085;
+}

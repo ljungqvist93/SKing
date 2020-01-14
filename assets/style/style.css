@@ -1,0 +1,249 @@
+#topper h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 2.6em;
+  color: #333; }
+@media screen and (max-width: 574px) {
+  #topper h1 {
+    font-size: 1.5em; } }
+@media screen and (max-width: 910px) {
+  #topper {
+    padding: 15px;
+    overflow: hidden; }
+    #topper h1 {
+      float: left; }
+    #topper #main {
+      display: none; } }
+@media screen and (min-width: 911px) {
+  #topper h1 {
+    width: 415px;
+    margin: auto; } }
+#topper #main {
+  float: left;
+  padding: 15px 20px; }
+  #topper #main li {
+    font-family: 'Gelasio', serif;
+    font-weight: 400;
+    margin-right: 10px; }
+
+@media screen and (min-width: 1000px) {
+  #large #topper {
+    display: none; } }
+
+#large header {
+  margin-top: 25px; }
+  @media screen and (min-width: 1200px) {
+    #large header h1 {
+      font-size: 3.3em; } }
+#large picture {
+  display: block;
+  width: 100%;
+  margin: auto; }
+  #large picture img {
+    width: 100%; }
+#large #share {
+  margin-top: 30px; }
+  #large #share li {
+    font-size: 1.6em; }
+
+#twosides #pic_head {
+  overflow: hidden;
+  height: 50vw;
+  position: relative;
+  background-color: #8c7ae6; }
+  #twosides #pic_head picture {
+    display: block;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    overflow: hidden; }
+    #twosides #pic_head picture img {
+      display: block;
+      height: 100%;
+      position: absolute;
+      left: -100%;
+      right: -100%;
+      bottom: 0;
+      top: 0;
+      margin: auto; }
+  #twosides #pic_head header {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding: 0 100px;
+    box-sizing: border-box;
+    top: 20%; }
+    #twosides #pic_head header h1 {
+      color: #353b48; }
+      @media screen and (min-width: 1240px) {
+        #twosides #pic_head header h1 {
+          font-size: 3em; } }
+    #twosides #pic_head header #cat,
+    #twosides #pic_head header #section {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      display: inline-block;
+      color: #fff;
+      font-size: 1.2em; }
+    #twosides #pic_head header #section {
+      margin-left: 15px;
+      margin-top: 15px; }
+    #twosides #pic_head header #time {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      color: #fff;
+      margin-top: 30px; }
+#twosides #body {
+  margin-top: 50px; }
+
+@media screen and (min-width: 911px) {
+  #small {
+    margin-top: 50px; } }
+@media screen and (min-width: 1100px) {
+  #small header h1 {
+    font-size: 3.3em; } }
+#small picture {
+  display: block;
+  max-width: 1000px;
+  margin: auto; }
+  #small picture img {
+    width: 100%; }
+#small #pContent picture {
+  display: block; }
+  #small #pContent picture img {
+    width: 100%; }
+
+#postPage {
+  position: relative; }
+  #postPage header {
+    color: #2d3436; }
+    #postPage header h1 {
+      font-family: 'Abril Fatface', cursive;
+      font-weight: 400; }
+  #postPage #body {
+    margin-top: 30px; }
+    #postPage #body p {
+      font-family: 'Gelasio', serif;
+      font-weight: 400;
+      font-size: 1.4em;
+      margin-bottom: 30px; }
+    #postPage #body ul {
+      font-family: 'Gelasio', serif;
+      font-weight: 400;
+      font-size: 1.4em; }
+      #postPage #body ul li {
+        list-style-type: none;
+        margin-top: 50px; }
+        #postPage #body ul li h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          font-size: 1em;
+          margin-bottom: 15px; }
+    #postPage #body h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      margin-bottom: 15px; }
+    #postPage #body h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1.6em;
+      margin-bottom: 15px; }
+    #postPage #body ul li h3 {
+      display: block; }
+    #postPage #body p,
+    #postPage #body ul,
+    #postPage #body ol,
+    #postPage #body blockquote,
+    #postPage #body h2,
+    #postPage #body h3 {
+      max-width: 674px;
+      margin: auto;
+      margin-bottom: 30px; }
+    #postPage #body img {
+      display: block; }
+    #postPage #body p + .xlarge {
+      margin-bottom: 0; }
+
+.xlarge {
+  max-width: 100% !important;
+  padding: 40px 0; }
+  .xlarge img {
+    width: 100%; }
+
+.llarge {
+  max-width: 928px !important;
+  margin: auto; }
+  .llarge img {
+    width: 100%; }
+
+header {
+  max-width: 674px;
+  margin: auto; }
+
+#tags {
+  max-width: 674px;
+  margin: auto;
+  margin-top: 30px; }
+  #tags ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    margin-right: 15px;
+    color: #333; }
+
+#adminTools {
+  display: none; }
+
+#alltags {
+  display: none; }
+
+#imageIframe {
+  display: none; }
+
+#pictures {
+  width: 60%;
+  margin: auto; }
+  #pictures label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px; }
+  #pictures input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 8px; }
+
+#toolPlacement {
+  float: right; }
+
+#editTitle {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.3em;
+  border: none;
+  width: 674px;
+  outline: none; }
+
+#edit {
+  max-width: 674px;
+  margin: auto; }
+
+.cke_chrome {
+  border: none !important;
+  width: 674px !important; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.inline li {
+  display: inline-block; }
+
+a {
+  color: #16a085; }
+
+/*# sourceMappingURL=style.css.map */

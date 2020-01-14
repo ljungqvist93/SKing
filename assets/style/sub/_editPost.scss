@@ -1,0 +1,54 @@
+#adminTools{
+	display: none;
+}
+#alltags{
+	display: none;
+}
+#imageIframe{
+	display: none;
+}
+#pictures{
+	width: 60%;
+	margin:auto;
+	label{
+		display: block;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 20px;
+	}
+	input{
+		width:100%;
+		box-sizing: border-box;
+		padding:10px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight:400;
+		font-size:1em;
+		margin-top: 8px;
+	}
+}
+#toolPlacement{
+	float:right;
+}
+
+#postText{
+	p{
+
+	}
+}
+
+#editTitle{
+	font-family: 'Abril Fatface', cursive;
+	font-size:3.3em;
+	border:none;
+	width: 674px;
+	outline: none;
+}
+
+#edit{
+	max-width:674px;
+	margin:auto;
+}
+
+.cke_chrome{
+	border:none !important;
+	width:674px !important;
+}

@@ -1,0 +1,48 @@
+#topper{
+	h1{
+		font-family: 'Abril Fatface', cursive;
+		font-weight: 400;
+		font-size:2.6em;
+		color:#333;
+	}
+	@media screen and (max-width: 574px){
+		h1{
+			font-size:1.5em;
+		}
+	}
+	@media screen and (max-width:910px){
+		padding: 15px;
+		overflow: hidden;
+		h1{
+			float:left;
+		}
+		#main{
+			display: none;
+		}
+	}
+	@media screen and (min-width:911px){
+		h1{
+			width:415px;
+			margin:auto;
+		}
+	}
+	#main{
+		float: left;
+		padding:15px 20px;
+
+		li{
+			font-family: 'Gelasio', serif;
+			font-weight:400;
+
+			margin-right: 10px;
+		}
+	}
+}
+
+#large{
+	#topper{
+		@media screen and (min-width:1000px){
+			display:none;
+		}
+	}
+}
