@@ -9,17 +9,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php include 'assets/parts/head.php'; ?>
-	<body id="postPage">
-        <?php foreach ($posts as $post): ?>
-            <a href="post.php?slug=<?= $post['slug']; ?>">
+	<body id="startPage">
+        <div class="wrapper">
+            <?php foreach ($posts as $post): ?>
                 <article>
-                    <h2><?= $post['title']; ?></h2>
-                    <picture>
-                        <source set="">
-                        <source set="">
-                        <img src="" alt="">
-                    </picture>
+                    <a href="post.php?slug=<?= $post['slug']; ?>">
+                        <h2><?= $post['title']; ?></h2>
+                        <picture>
+                            <source set="">
+                            <source set="">
+                            <img src="<?= $post['thumbImage']; ?>" alt="">
+                        </picture>
+                    </a>
                 </article>
-            </a>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
     <?php include 'assets/parts/bottom.php'; ?>

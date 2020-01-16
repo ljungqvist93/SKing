@@ -236,6 +236,33 @@ header {
   border: none !important;
   width: 674px !important; }
 
+#startPage {
+  margin: auto;
+  width: 1200px;
+  margin-top: 30px; }
+  #startPage .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  #startPage article {
+    max-width: 45%;
+    position: relative;
+    margin-bottom: 30px; }
+    #startPage article a {
+      text-decoration: none; }
+    #startPage article h2 {
+      font-family: "Abril Fatface", cursive;
+      font-weight: 400;
+      font-size: 2em;
+      color: #7f8c8d; }
+    #startPage article picture {
+      display: block;
+      margin-top: 10px; }
+      #startPage article picture img {
+        display: block;
+        width: 100%; }
+
 * {
   margin: 0;
   padding: 0; }

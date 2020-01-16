@@ -1,0 +1,36 @@
+
+#startPage{
+	margin:auto;
+	width:1200px;
+	margin-top: 30px;
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	article{
+		max-width:45%;
+		position: relative;
+		margin-bottom: 30px;
+		a{
+			text-decoration: none;
+		}
+		h2{
+			font-family: $headFont;
+			font-weight: 400;
+			font-size:2em;
+
+			color:#7f8c8d;
+		}
+
+		picture{
+			display: block;
+			margin-top: 10px;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
