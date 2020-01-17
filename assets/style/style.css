@@ -1,37 +1,45 @@
-#topper h1 {
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 400;
-  font-size: 2.6em;
-  color: #333; }
-@media screen and (max-width: 574px) {
+#topper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #fff;
+  padding-bottom: 10px; }
   #topper h1 {
-    font-size: 1.5em; } }
-@media screen and (max-width: 910px) {
-  #topper {
-    padding: 15px;
-    overflow: hidden; }
-    #topper h1 {
-      float: left; }
-    #topper #main {
-      display: none; } }
-@media screen and (min-width: 911px) {
-  #topper h1 {
-    width: 415px;
-    margin: auto; } }
-#topper #main {
-  float: left;
-  padding: 15px 20px; }
-  #topper #main li {
-    font-family: 'Gelasio', serif;
+    font-family: 'Pacifico', cursive;
     font-weight: 400;
-    margin-right: 10px; }
+    font-size: 2em;
+    color: #333; }
+  @media screen and (max-width: 574px) {
+    #topper h1 {
+      font-size: 1.5em; } }
+  @media screen and (max-width: 910px) {
+    #topper {
+      padding: 15px;
+      overflow: hidden; }
+      #topper h1 {
+        float: left; }
+      #topper #main {
+        display: none; } }
+  @media screen and (min-width: 911px) {
+    #topper h1 {
+      width: 238px;
+      margin: auto; } }
+  #topper #main {
+    float: left;
+    padding: 10px 20px; }
+    #topper #main li {
+      font-family: 'Gelasio', serif;
+      font-weight: 400;
+      margin-right: 10px; }
 
 @media screen and (min-width: 1000px) {
   #large #topper {
     display: none; } }
 
 #large header {
-  margin-top: 25px; }
+  margin-top: 30px !important; }
   @media screen and (min-width: 1200px) {
     #large header h1 {
       font-size: 3.3em; } }
@@ -46,57 +54,103 @@
   #large #share li {
     font-size: 1.6em; }
 
-#twosides #pic_head {
-  overflow: hidden;
-  height: 50vw;
-  position: relative;
-  background-color: #8c7ae6; }
-  #twosides #pic_head picture {
-    display: block;
-    width: 50%;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    overflow: hidden; }
-    #twosides #pic_head picture img {
-      display: block;
-      height: 100%;
-      position: absolute;
-      left: -100%;
-      right: -100%;
-      bottom: 0;
-      top: 0;
-      margin: auto; }
+@media screen and (max-width: 799px) {
+  #twosides #pic_head picture img {
+    width: 100%;
+    display: block; }
   #twosides #pic_head header {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    padding: 0 100px;
-    box-sizing: border-box;
-    top: 20%; }
-    #twosides #pic_head header h1 {
-      color: #353b48; }
-      @media screen and (min-width: 1240px) {
-        #twosides #pic_head header h1 {
-          font-size: 3em; } }
+    padding: 20px; }
     #twosides #pic_head header #cat,
-    #twosides #pic_head header #section {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      display: inline-block;
-      color: #fff;
-      font-size: 1.2em; }
-    #twosides #pic_head header #section {
-      margin-left: 15px;
-      margin-top: 15px; }
+    #twosides #pic_head header #section,
     #twosides #pic_head header #time {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
       font-size: 1em;
+      display: inline-block; }
+    #twosides #pic_head header #section {
+      margin-top: 10px; }
+      #twosides #pic_head header #section li {
+        background-color: #95a5a6;
+        padding: 5px;
+        font-size: .8em; }
+        #twosides #pic_head header #section li a {
+          color: #fff;
+          text-decoration: none; }
+    #twosides #pic_head header #time {
+      display: none; }
+    #twosides #pic_head header #cat {
+      background-color: #e74c3c;
       color: #fff;
-      margin-top: 30px; }
-#twosides #body {
-  margin-top: 50px; }
+      font-size: .8em;
+      padding: 5px; } }
+@media screen and (min-width: 800px) {
+  #twosides #pic_head {
+    overflow: hidden;
+    height: 50vw;
+    position: relative;
+    background-color: #8c7ae6; }
+    #twosides #pic_head picture {
+      display: block;
+      width: 50%;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      overflow: hidden; }
+      #twosides #pic_head picture img {
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: -100%;
+        right: -100%;
+        bottom: 0;
+        top: 0;
+        margin: auto; }
+    #twosides #pic_head #head_content {
+      width: 50%;
+      right: 0;
+      position: absolute;
+      box-sizing: border-box;
+      height: 100%; }
+      #twosides #pic_head #head_content header {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+        right: 50px; }
+        #twosides #pic_head #head_content header h1 {
+          color: #ecf0f1; } }
+        @media screen and (min-width: 800px) and (max-width: 800px) {
+          #twosides #pic_head #head_content header h1 {
+            font-size: 2em; } }
+        @media screen and (min-width: 800px) and (min-width: 801px) and (max-width: 1000px) {
+          #twosides #pic_head #head_content header h1 {
+            font-size: 2.3em; } }
+        @media screen and (min-width: 800px) and (min-width: 1001px) and (max-width: 1310px) {
+          #twosides #pic_head #head_content header h1 {
+            font-size: 3em; } }
+        @media screen and (min-width: 800px) and (min-width: 1311px) {
+          #twosides #pic_head #head_content header h1 {
+            font-size: 3.8em; } }
+@media screen and (min-width: 800px) {
+        #twosides #pic_head #head_content header #cat,
+        #twosides #pic_head #head_content header #section {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          display: inline-block;
+          color: #fff;
+          font-size: 1.2em; }
+        #twosides #pic_head #head_content header #section {
+          margin-left: 15px;
+          margin-top: 15px; }
+        #twosides #pic_head #head_content header #time {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 1em;
+          color: #fff;
+          margin-top: 30px; } }
+@media screen and (max-width: 799px) {
+  #twosides #body {
+    padding: 0 20px; } }
 
 @media screen and (min-width: 911px) {
   #small {
@@ -118,12 +172,14 @@
 #postPage {
   position: relative; }
   #postPage header {
-    color: #2d3436; }
+    color: #2d3436;
+    padding: 0 30px; }
     #postPage header h1 {
-      font-family: 'Abril Fatface', cursive;
-      font-weight: 400; }
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      color: #333; }
   #postPage #body {
-    margin-top: 30px; }
+    padding: 30px; }
     #postPage #body p {
       font-family: 'Gelasio', serif;
       font-weight: 400;
@@ -179,7 +235,8 @@
   .llarge img {
     width: 100%; }
 
-header {
+#large header,
+#small header {
   max-width: 674px;
   margin: auto; }
 
@@ -238,24 +295,32 @@ header {
 
 #startPage {
   margin: auto;
-  width: 1200px;
-  margin-top: 30px; }
+  margin-top: 80px;
+  max-width: 1300px;
+  padding: 0 30px; }
   #startPage .wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row; }
+    flex-wrap: wrap; }
   #startPage article {
-    max-width: 45%;
-    position: relative;
     margin-bottom: 30px; }
+    @media screen and (max-width: 640px) {
+      #startPage article {
+        width: 100%; } }
+    @media screen and (min-width: 641px) {
+      #startPage article {
+        max-width: 30%; } }
     #startPage article a {
       text-decoration: none; }
     #startPage article h2 {
-      font-family: "Abril Fatface", cursive;
+      font-family: "Montserrat", sans-serif;
       font-weight: 400;
       font-size: 2em;
+      margin-top: 15px;
       color: #7f8c8d; }
+      @media screen and (min-width: 641px) {
+        #startPage article h2 {
+          font-size: 1.5em; } }
     #startPage article picture {
       display: block;
       margin-top: 10px; }

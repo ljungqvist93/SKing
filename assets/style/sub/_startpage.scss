@@ -1,18 +1,23 @@
 
 #startPage{
 	margin:auto;
-	width:1200px;
-	margin-top: 30px;
+	margin-top: 80px;
+	max-width:1300px;
+	padding: 0 30px;
 	.wrapper{
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		flex-direction: row;
 	}
 	article{
-		max-width:45%;
-		position: relative;
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 640px){
+			width:100%;
+		}
+		@media screen and (min-width:641px){
+			max-width:30%;
+		}
 		a{
 			text-decoration: none;
 		}
@@ -20,8 +25,13 @@
 			font-family: $headFont;
 			font-weight: 400;
 			font-size:2em;
+			margin-top: 15px;
 
 			color:#7f8c8d;
+
+			@media screen and (min-width: 641px){
+				font-size: 1.5em;
+			}
 		}
 
 		picture{

@@ -1,8 +1,15 @@
 #topper{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	height:60px;
+	background-color: #fff;
+	padding-bottom: 10px;
 	h1{
-		font-family: 'Abril Fatface', cursive;
+		font-family: 'Pacifico', cursive;
 		font-weight: 400;
-		font-size:2.6em;
+		font-size:2em;
 		color:#333;
 	}
 	@media screen and (max-width: 574px){
@@ -22,13 +29,13 @@
 	}
 	@media screen and (min-width:911px){
 		h1{
-			width:415px;
+			width:238px;
 			margin:auto;
 		}
 	}
 	#main{
 		float: left;
-		padding:15px 20px;
+		padding:10px 20px;
 
 		li{
 			font-family: 'Gelasio', serif;

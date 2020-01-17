@@ -10,16 +10,26 @@
 <html lang="en">
 	<?php include 'assets/parts/head.php'; ?>
 	<body id="startPage">
+        <section id="topper">
+            <nav id="main">
+                <ul class="inline">
+                    <li>Articles</li>
+                    <li>Guides</li>
+                    <li>About me</li>
+                </ul>
+            </nav>
+            <h1>Daniel Ljungqvist</h1>
+        </section>
         <div class="wrapper">
             <?php foreach ($posts as $post): ?>
                 <article>
                     <a href="post.php?slug=<?= $post['slug']; ?>">
-                        <h2><?= $post['title']; ?></h2>
                         <picture>
                             <source set="">
                             <source set="">
                             <img src="<?= $post['thumbImage']; ?>" alt="">
                         </picture>
+                        <h2><?= $post['title']; ?></h2>
                     </a>
                 </article>
             <?php endforeach; ?>

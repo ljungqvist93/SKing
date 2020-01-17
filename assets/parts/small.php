@@ -6,7 +6,7 @@
 			<li>About me</li>
 		</ul>
 	</nav>
-	<h1>DANIEL LJUNGQVIST</h1>
+	<h1>Daniel Ljungqvist</h1>
 </section>
 <div class="wrapper" id="small">
 	<div id="pContent">
