@@ -1,6 +1,8 @@
 <div class="wrapper" id="large">
 	<picture>
-		<img src="<?= $post['coverImage']; ?>" alt="">
+		<source srcset="<?= $post['thumbImage']; ?>" media="(max-width:640px)">
+		<source srcset="<?= $post['coverImage']; ?>" media="(min-width:641px)">
+		<img src="<?= $post['thumbImage']; ?>" alt="">
 	</picture>
 	<header>
 		<h1><?= $post['title']; ?></h1>

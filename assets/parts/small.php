@@ -10,6 +10,9 @@
 </section>
 <div class="wrapper" id="small">
 	<div id="pContent">
+		<header>
+			<h1><?= $post['title']; ?></h1>
+		</header>
 		<picture>
 			<img src="<?= $post['coverImage']; ?>" alt="">
 		</picture>
@@ -19,9 +22,6 @@
 				<li>#review</li>
 			</ul>
 		</div>
-		<header>
-			<h1><?= $post['title']; ?></h1>
-		</header>
 		<div id="body">
 			<?= $post['postText']; ?>
 		</div>

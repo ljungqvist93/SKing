@@ -2,7 +2,6 @@
 	position: relative;
 	header {
 		color:#2d3436;
-		padding: 0 30px;
 		h1{
 			font-family: $headFont;
 			font-weight:900;
@@ -13,6 +12,13 @@
 	#body{
 		@import '../editStyle';
 		padding:30px;
+	}
+}
+
+#large,
+#twosides{
+	header{
+		padding: 0 30px;
 	}
 }
 
@@ -29,14 +35,6 @@
 	margin:auto;
 	img{
 		width: 100%;
-	}
-}
-
-#large,
-#small{
-	header{
-		max-width:674px;
-		margin:auto;
 	}
 }
 
