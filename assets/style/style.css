@@ -25,7 +25,16 @@
   @media screen and (min-width: 911px) {
     #topper h1 {
       width: 238px;
-      margin: auto; } }
+      margin: auto; }
+    #topper #themeButton {
+      float: right;
+      top: 0;
+      padding: 10px; }
+      #topper #themeButton a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400; } }
   #topper #main {
     float: left;
     padding: 10px 20px; }
