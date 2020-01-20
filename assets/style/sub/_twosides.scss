@@ -8,7 +8,8 @@
 				}
 			}
 			header{
-				padding: 20px;
+				padding: 30px;
+				padding-bottom: 0;
 				#cat,
 				#section,
 				#time{
@@ -41,6 +42,16 @@
 					font-size:.8em;
 					padding:5px;
 				}
+			}
+		}
+		@media screen and (max-width:440px){
+			#head_content header h1{
+				font-size:1.8em;
+			}
+		}
+		@media screen and (min-width:441px) and (max-width:799px){
+			#head_content header h1{
+				font-size:2.4em;
 			}
 		}
 		@media screen and (min-width:800px) {
@@ -80,10 +91,7 @@
 					right: 50px;
 					h1{
 						color:#ecf0f1;
-						
-						@media screen and (max-width:800px) {
-							font-size:2em;
-						}
+
 						@media screen and (min-width: 801px) and (max-width:1000px){
 							font-size:2.3em;
 						}

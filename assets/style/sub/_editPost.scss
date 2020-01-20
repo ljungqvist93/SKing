@@ -26,7 +26,8 @@
 	}
 }
 #toolPlacement{
-	float:right;
+	right: 0;
+	position: fixed;
 }
 
 #postText{
@@ -52,4 +53,10 @@
 .cke_chrome{
 	border:none !important;
 	width:674px !important;
+}
+
+#imageIframe{
+	height: 100%;
+	float:left;
+	position: fixed;
 }

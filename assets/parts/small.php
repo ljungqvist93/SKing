@@ -1,29 +1,12 @@
-<section id="topper">
-	<nav id="main">
-		<ul class="inline">
-			<li>Articles</li>
-			<li>Guides</li>
-			<li>About me</li>
-		</ul>
-	</nav>
-	<h1>Daniel Ljungqvist</h1>
-</section>
+<?php include 'assets/parts/topper.php'; ?>
 <div class="wrapper" id="small">
-	<div id="pContent">
-		<header>
-			<h1><?= $post['title']; ?></h1>
-		</header>
-		<picture>
-			<img src="<?= $post['coverImage']; ?>" alt="">
-		</picture>
-		<div id="tags">
-			<ul class="inline">
-				<li>Movies</li>
-				<li>#review</li>
-			</ul>
-		</div>
-		<div id="body">
-			<?= $post['postText']; ?>
-		</div>
-	</div>
+	<h1><?= $post['title']; ?></h1>
+	<picture>
+		<source srcset="<?= $post['thumbImage']; ?>" media="(max-width:640px)" />
+		<source srcset="<?= $post['coverImage']; ?>" media="(min-width:1100px)" />
+		<img src="<?= $post['thumbImage']; ?>" alt="">
+	</picture>
+	<section id="body">
+		<?= $post['postText']; ?>
+	</section>
 </div>
