@@ -1,0 +1,45 @@
+body{
+	background-color: #1A1A1B !important;
+}
+
+#topper{
+	background-color: #030303 !important;
+
+	#main{
+		li{
+			color:#fff;
+		}
+	}
+	#themeButton{
+		a{
+			color:#fff;
+		}
+	}
+	h1{
+		color:#fff !important;
+	}
+}
+
+article{
+	h2{
+		color:#fff !important;
+	}
+}
+
+
+#large,
+#small{
+	h1{
+		color:#fff !important;
+	}
+
+	#timeTagsSection{
+		color:#fff;
+	}
+
+	#body{
+		p{
+			color:#fff;
+		}
+	}
+}

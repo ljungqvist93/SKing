@@ -11,19 +11,25 @@
 		margin-top: 25px;
 		box-sizing: border-box;
 
-		@media screen and (max-width: 1180px){
+		@media screen and (max-width:660px){
 			img{
 				width:100%;
 			}
 		}
 
-		@media screen and (min-width: 1181px) and (max-width: 1450px){
+		@media screen and (min-width:661px) and (max-width: 1180px){
+			img{
+				max-width:1100px;
+			}
+		}
+
+		@media screen and (min-width: 1181px) and (max-width: 1380px){
 
 			img{
 				max-width:1100px;
 			}
 		}
-		@media screen and (min-width: 1451px){
+		@media screen and (min-width: 1381px){
 			img{
 				width:auto;
 				max-width:80%;

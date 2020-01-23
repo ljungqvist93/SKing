@@ -22,6 +22,12 @@
 		        </ul>
 			</div>
 		</div>
+		<ul id="share" class="inline">
+			<li><i class="fab fa-facebook"></i></li>
+			<li><i class="fab fa-twitter"></i></li>
+			<li><i class="fab fa-reddit"></i></li>
+			<li><i class="fab fa-linkedin"></i></li>
+		</ul>
 	</header>
 	<picture>
 		<source srcset="<?= $post['thumbImage']; ?>" media="(max-width:640px)" />
