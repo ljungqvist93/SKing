@@ -60,3 +60,35 @@
 	float:left;
 	position: fixed;
 }
+
+
+
+#overviewPage{
+	max-width:1000px;
+	margin:auto;
+	a{
+
+		text-decoration: none;
+	}
+	article{
+		display: block;
+		overflow: hidden;
+		margin-top: 30px;
+		img{
+			width:70px;
+			float:left;
+			margin-right: 15px;
+		}
+		.postDesc{
+			float:left;
+			h2{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				font-size:1.2em;
+				a{
+					color:#000;
+				}
+			}
+		}
+	}
+}

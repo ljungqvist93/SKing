@@ -21,9 +21,6 @@
 	                    <?php endforeach; ?>
 	                </ul>
 				</div>
-				<div id="time">
-					January 12th, 2020 @ 03:25:33 AM
-				</div>
 			</header>
 		</section>
 	</div>

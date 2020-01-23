@@ -1,13 +1,6 @@
 #large{
 	header{
-		margin-top: 30px !important;
-		max-width:674px;
-		margin:auto;
-		h1{
-			@media screen and (min-width:1200px){
-				font-size:3.3em;
-			}
-		}
+
 	}
 	picture{
 		display: block;
@@ -17,10 +10,28 @@
 			width:100%;
 		}
 	}
+	#timeTagsSection{
+		box-sizing: border-box;
+		margin-top: 15px;
+	}
 	#share{
-		margin-top: 30px;
+		@media screen and (min-width:1180px){
+			margin-top: 30px;
+		}
 		li{
 			font-size:1.6em;
+		}
+	}
+
+	@media screen and (max-width:1179px){
+		.large{
+			display: none;
+		}
+	}
+
+	@media screen and (min-width:1180px){
+		.mobile{
+			display: none;
 		}
 	}
 }

@@ -21,6 +21,7 @@
                             <img src="<?= $post['thumbImage']; ?>" alt="">
                         </picture>
                         <h2><?= $post['title']; ?></h2>
+                        <?= $post['id']; ?>
                     </a>
                 </article>
             <?php endforeach; ?>

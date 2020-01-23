@@ -54,23 +54,26 @@
   #large #topper {
     display: none; } }
 
-#large header {
-  margin-top: 30px !important;
-  max-width: 674px;
-  margin: auto; }
-  @media screen and (min-width: 1200px) {
-    #large header h1 {
-      font-size: 3.3em; } }
 #large picture {
   display: block;
   width: 100%;
   margin: auto; }
   #large picture img {
     width: 100%; }
-#large #share {
-  margin-top: 30px; }
-  #large #share li {
-    font-size: 1.6em; }
+#large #timeTagsSection {
+  box-sizing: border-box;
+  margin-top: 15px; }
+@media screen and (min-width: 1180px) {
+  #large #share {
+    margin-top: 30px; } }
+#large #share li {
+  font-size: 1.6em; }
+@media screen and (max-width: 1179px) {
+  #large .large {
+    display: none; } }
+@media screen and (min-width: 1180px) {
+  #large .mobile {
+    display: none; } }
 
 @media screen and (max-width: 799px) {
   #twosides #pic_head picture img {
@@ -176,32 +179,13 @@
 
 #small {
   margin-top: 100px; }
-  #small h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    max-width: 1100px;
-    margin: auto; }
-    @media screen and (min-width: 521px) {
-      #small h1 {
-        padding: 0 40px; } }
-    @media screen and (max-width: 520px) {
-      #small h1 {
-        padding: 0 15px;
-        font-size: 1.5em; } }
-    @media screen and (min-width: 521px) and (max-width: 970px) {
-      #small h1 {
-        font-size: 3em; } }
-    @media screen and (min-width: 971px) {
-      #small h1 {
-        font-size: 4.3em; } }
+  #small #timeTagsSection {
+    margin-top: 15px; }
   #small picture {
     display: inline-block;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 25px;
     box-sizing: border-box; }
-    @media screen and (min-width: 521px) {
-      #small picture {
-        padding: 0 40px; } }
     @media screen and (max-width: 1180px) {
       #small picture img {
         width: 100%; } }
@@ -275,8 +259,27 @@
     #postPage #body p + .xlarge {
       margin-bottom: 0; }
 
-#large header {
-  padding: 0 30px; }
+#large header,
+#small header {
+  max-width: 1100px;
+  margin: auto; }
+  #large header h1,
+  #small header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900; }
+    @media screen and (max-width: 520px) {
+      #large header h1,
+      #small header h1 {
+        padding: 0 15px;
+        font-size: 1.5em; } }
+    @media screen and (min-width: 521px) and (max-width: 970px) {
+      #large header h1,
+      #small header h1 {
+        font-size: 3em; } }
+    @media screen and (min-width: 971px) {
+      #large header h1,
+      #small header h1 {
+        font-size: 4.3em; } }
 
 .xlarge {
   max-width: 100% !important;
@@ -290,15 +293,40 @@
   .llarge img {
     width: 100%; }
 
-#tags {
-  max-width: 674px;
-  margin: auto;
-  margin-top: 30px; }
-  #tags ul li {
-    font-family: 'Montserrat', sans-serif;
-    font-size: .9em;
-    margin-right: 15px;
-    color: #333; }
+#timeTagsSection {
+  overflow: hidden; }
+  @media screen and (max-width: 520px) {
+    #timeTagsSection {
+      padding: 15px;
+      padding-top: 0; } }
+  #timeTagsSection #time,
+  #timeTagsSection #tags,
+  #timeTagsSection #section {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: inline-block; }
+    @media screen and (max-width: 770px) {
+      #timeTagsSection #time,
+      #timeTagsSection #tags,
+      #timeTagsSection #section {
+        font-size: 1em; } }
+    @media screen and (min-width: 771px) {
+      #timeTagsSection #time,
+      #timeTagsSection #tags,
+      #timeTagsSection #section {
+        font-size: 1.2em; } }
+  #timeTagsSection #time {
+    margin-right: 10px; }
+  #timeTagsSection #section {
+    margin-left: 10px; }
+  @media screen and (max-width: 770px) {
+    #timeTagsSection #tags {
+      margin-left: 0; }
+      #timeTagsSection #tags a {
+        text-decoration: none; } }
+  @media screen and (min-width: 771px) {
+    #timeTagsSection #tags {
+      margin-left: 15px; } }
 
 #adminTools {
   display: none; }
@@ -349,6 +377,28 @@
   height: 100%;
   float: left;
   position: fixed; }
+
+#overviewPage {
+  max-width: 1000px;
+  margin: auto; }
+  #overviewPage a {
+    text-decoration: none; }
+  #overviewPage article {
+    display: block;
+    overflow: hidden;
+    margin-top: 30px; }
+    #overviewPage article img {
+      width: 70px;
+      float: left;
+      margin-right: 15px; }
+    #overviewPage article .postDesc {
+      float: left; }
+      #overviewPage article .postDesc h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.2em; }
+        #overviewPage article .postDesc h2 a {
+          color: #000; }
 
 #startPage {
   margin: auto;
