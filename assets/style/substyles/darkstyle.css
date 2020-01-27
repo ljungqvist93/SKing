@@ -23,4 +23,12 @@ article h2 {
 #small #body p {
   color: #fff; }
 
+.fa-bars {
+  color: #fff !important; }
+
+#mobileMenu {
+  background-color: #000; }
+  #mobileMenu a {
+    color: #fff !important; }
+
 /*# sourceMappingURL=darkstyle.css.map */

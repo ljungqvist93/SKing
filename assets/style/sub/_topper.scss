@@ -45,7 +45,7 @@
 		#themeButton{
 			float:right;
 			top: 0;
-			padding:10px;
+			margin:23px;
 			a{
 				text-decoration: none;
 				color:#000;
@@ -59,7 +59,7 @@
 	}
 	#main{
 		float: left;
-		padding:18px 20px;
+		padding:25px 20px;
 
 		li{
 			font-family: 'Gelasio', serif;
@@ -75,5 +75,49 @@
 		@media screen and (min-width:1000px){
 			display:none;
 		}
+	}
+}
+
+#mobileMenu{
+	position: absolute;
+	top:60px;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	display: none;
+	ul{
+		margin:30px;
+		box-sizing: border-box;
+		li{
+			list-style: none;
+			font-family: $headFont;
+			font-weight:400;
+			font-size:1.2em;
+			border:solid 1px #333;
+			border-bottom:none;
+			padding:20px;
+			&:last-of-type{
+				border-bottom: solid 1px #333;
+			}
+			a{
+				display: block;
+				text-decoration: none;
+				color:#333;
+				width: 100%;
+			}
+		}
+	}
+	#themeButton{
+		float:right;
+		font-family: $headFont;
+		font-size:2em;
+		margin:20px;
+		a{
+			text-decoration: none;
+			color:#333;
+		}
+	}
+	@media screen and (min-width:910px){
+		display: none;
 	}
 }
