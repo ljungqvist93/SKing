@@ -1,56 +1,49 @@
-#topper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background-color: #fff;
-  padding-bottom: 10px; }
-  #topper h1 {
-    font-family: 'Pacifico', cursive;
+#topper #bg {
+  background-image: url("../../assets/bg3.png");
+  height: 350px; }
+#topper header {
+  padding-top: 40px; }
+  #topper header h1 {
+    font-family: 'Permanent Marker', cursive;
     font-weight: 400;
-    font-size: 2em;
-    color: #333; }
-  @media screen and (max-width: 574px) {
-    #topper h1 {
-      font-size: 1.5em; } }
-  @media screen and (max-width: 910px) {
-    #topper {
-      padding: 0 15px;
-      overflow: hidden; }
-      #topper h1 {
-        float: left; }
-      #topper #main {
-        display: none; } }
-  @media screen and (max-width: 910px) {
-    #topper #themeButton {
-      display: none; }
-    #topper .fa-bars {
-      float: right;
-      padding: 14px 10px;
-      font-size: 2em; } }
-  @media screen and (min-width: 911px) {
-    #topper h1 {
-      width: 238px;
-      margin: auto; }
-    #topper #themeButton {
-      float: right;
-      top: 0;
-      margin: 23px; }
-      #topper #themeButton a {
-        text-decoration: none;
-        color: #000;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400; }
-    #topper .fa-bars {
-      display: none; } }
-  #topper #main {
-    float: left;
-    padding: 25px 20px; }
-    #topper #main li {
-      font-family: 'Gelasio', serif;
+    font-size: 7em;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+    border: solkid; }
+  #topper header p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center; }
+#topper nav {
+  background-color: #000;
+  bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+  border-top: solid 2px #fad390;
+  border-bottom: solid 2px #fad390; }
+  #topper nav ul {
+    display: inline-block; }
+  #topper nav li {
+    margin-right: 15px;
+    border: solid; }
+    #topper nav li a {
+      font-family: "Montserrat", sans-serif;
       font-weight: 400;
-      margin-right: 10px; }
+      font-size: 1em;
+      text-decoration: none;
+      color: #2ecc71; }
+  #topper nav #themeButton {
+    display: inline-block; }
+    #topper nav #themeButton a {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none; }
 
 @media screen and (min-width: 1000px) {
   #large #topper {
@@ -455,44 +448,70 @@
         #overviewPage article .postDesc h2 a {
           color: #000; }
 
-#startPage {
-  margin: auto;
-  margin-top: 80px;
-  max-width: 1300px;
-  padding: 0 30px; }
-  #startPage .wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  #startPage article {
-    margin-bottom: 30px; }
-    @media screen and (max-width: 640px) {
-      #startPage article {
-        width: 100%; } }
+#startPage #cinema {
+  height: 450px; }
+  #startPage #cinema li {
+    width: 33.3333%;
+    background-color: #333;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    #startPage #cinema li header {
+      position: absolute;
+      bottom: 0;
+      padding: 30px; }
+      #startPage #cinema li header h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
+        color: #fff; }
+    #startPage #cinema li picture {
+      display: block; }
+      #startPage #cinema li picture img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        display: block; }
+#startPage .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+#startPage article {
+  margin-bottom: 30px; }
+  @media screen and (max-width: 640px) {
+    #startPage article {
+      width: 100%; } }
+  @media screen and (min-width: 641px) {
+    #startPage article {
+      max-width: 30%; } }
+  #startPage article a {
+    text-decoration: none; }
+  #startPage article h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 15px;
+    color: #7f8c8d; }
     @media screen and (min-width: 641px) {
-      #startPage article {
-        max-width: 30%; } }
-    #startPage article a {
-      text-decoration: none; }
-    #startPage article h2 {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 400;
-      font-size: 2em;
-      margin-top: 15px;
-      color: #7f8c8d; }
-      @media screen and (min-width: 641px) {
-        #startPage article h2 {
-          font-size: 1.5em; } }
-    #startPage article picture {
+      #startPage article h2 {
+        font-size: 1.5em; } }
+  #startPage article picture {
+    display: block;
+    margin-top: 10px; }
+    #startPage article picture img {
       display: block;
-      margin-top: 10px; }
-      #startPage article picture img {
-        display: block;
-        width: 100%; }
+      width: 100%; }
 
 * {
   margin: 0;
   padding: 0; }
+
+body {
+  background-color: #000; }
 
 .inline li {
   display: inline-block; }
