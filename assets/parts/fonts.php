@@ -1,1 +1,1 @@
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Faster+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">

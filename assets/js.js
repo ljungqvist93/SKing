@@ -10,3 +10,4 @@ $('#toggleAdmin').on('click', function () {
 $('.fa-bars').click(function () {
 	$('#mobileMenu').slideToggle('fast');
 });
+

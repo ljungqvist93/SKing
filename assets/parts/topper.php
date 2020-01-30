@@ -1,8 +1,17 @@
 <section id="topper">
-    <div id="bg">
+    <div id="bg" style="
+    <?php foreach ($bg as $bg): ?>
+        background-image:url('assets/<?= $bg['name']; ?>');
+    <?php endforeach; ?>
+    ">
         <header>
-            <h1>CYBERLAD</h1>
-            <p>Alright, alright, alright, you gonna learn today!</p>
+            <?php foreach ($fonts as $font): ?>
+                <link href="https://fonts.googleapis.com/css?family=<?php echo  $font['url']; ?>&display=swap" rel="stylesheet">
+                <h1 style="font-family: <?= $font['name']; ?>">CYBERLAD</h1>
+            <?php endforeach; ?>
+            <?php foreach ($quotes as $quote): ?>
+                <p><?= $quote['quote']; ?></p>
+            <?php endforeach; ?>
         </header>
     </div>
     <nav>
