@@ -11,3 +11,6 @@ $('.fa-bars').click(function () {
 	$('#mobileMenu').slideToggle('fast');
 });
 
+$('#imageToggler').click(function () {
+	$('#imageIframe').slideToggle('fast');
+});

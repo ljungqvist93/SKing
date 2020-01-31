@@ -142,7 +142,7 @@ include 'connect.php';
 <div id="frameholder">
 <iframe id="imageIframe" src="images.php?id=<?= $postId; ?>&cover=0"></iframe>
 </div>
-<script src="https://www.danielljungqvist.se/ckeditor/ckeditor.js"></script>
+<script src="http://cyberlad.com/ckeditor/ckeditor.js"></script>
 <div id="postAdmin">
     <div id="toolPlacement">
         <i class="fal fa-bars" id="toggleAdmin"></i>
@@ -325,11 +325,6 @@ include 'connect.php';
     				</div>
                 </div>
             </div>
-            <div id="caruselle">
-                <?php foreach ($covers as $cover): ?>
-                    <div><img src="image/<?= $cover['imageName']; ?>" alt=""></div>
-                <?php endforeach; ?>
-            </div>
             <textarea name="title" id="editTitle" rows="3"><?= $post['title']; ?></textarea>
             <div id="textField">
                 <textarea name="postText" id="text" cols="30" rows="10"><?= $post['postText']; ?></textarea>
@@ -342,4 +337,4 @@ include 'connect.php';
 </div>
 
 <?= include '../assets/parts/bottom.php'; ?>
-<script src="https://danielljungqvist.se/assets/js/jquery.js"></script>
+
