@@ -38,6 +38,7 @@
     <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
 
     <meta name="description" content="Daniel Ljungqvist provides really rad, easy and interesting guides and articles about technology, IT, and much more!" />
+    <meta name=”theme-color” content="#000000">
 
 
     <script>

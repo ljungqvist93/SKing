@@ -81,15 +81,28 @@
 	#recent{
 		margin:auto;
 		max-width:1400px;
-		margin-top: 50px;
 		@media screen and (min-width:1000px){
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
+			margin-top: 50px;
 		}
 		article{
 			display: inline-block;
 			vertical-align: top;
+			position: relative;
+			.pLink{
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 10;
+			}
+			@media screen and (max-width:999px){
+				padding:20px;
+				box-sizing: border-box;
+			}
 			@media screen and (min-width:1000px){
 			max-width:30%;
 
@@ -110,6 +123,7 @@
 					a{
 						font-family: $headFont;
 						font-weight:400;
+						text-decoration: none;
 					}
 				}
 				.section{
@@ -128,39 +142,5 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-	}
-	article{
-		margin-bottom: 30px;
-
-		@media screen and (max-width: 640px){
-			width:100%;
-		}
-		@media screen and (min-width:641px){
-			max-width:30%;
-		}
-		a{
-			text-decoration: none;
-		}
-		h2{
-			font-family: $headFont;
-			font-weight: 400;
-			font-size:2em;
-			margin-top: 15px;
-
-			color:#7f8c8d;
-
-			@media screen and (min-width: 641px){
-				font-size: 1.5em;
-			}
-		}
-
-		picture{
-			display: block;
-			margin-top: 10px;
-			img{
-				display: block;
-				width: 100%;
-			}
-		}
 	}
 }

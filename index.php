@@ -29,19 +29,22 @@
         <ul id="cinema" class="inline">
             <?php foreach ($cinema as $sins): ?>
                 <li>
-                    <div class="shadow"></div>
-                    <picture>
-                        <img src="<?= $sins['thumbImage']; ?>" alt="">
-                    </picture>
-                    <header>
-                        <h3><?= $sins['title']; ?></h3>
-                    </header>
+                    <a href="">
+                        <div class="shadow"></div>
+                        <picture>
+                            <img src="<?= $sins['thumbImage']; ?>" alt="">
+                        </picture>
+                        <header>
+                            <h3><?= $sins['title']; ?></h3>
+                        </header>
+                    </a>
                 </li>
             <?php endforeach; ?>
         </ul>
         <section id="recent">
             <?php foreach ($rest as $rests): ?>
                 <article>
+                    <a href="post.php?slug=<?= $rests['slug']; ?>" class="pLink"></a>
                     <img src="<?= $rests['thumbImage']; ?>" alt="">
                     <div class="tags_section">
                         <div class="tags">

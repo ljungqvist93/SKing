@@ -1,23 +1,40 @@
 #topper #bg {
-  background-position: center center;
-  padding-bottom: 100px; }
-#topper header {
-  padding-top: 5vw; }
-  #topper header h1 {
-    font-weight: 400;
-    background-size: 100%;
-    color: #fff;
-    text-align: center; }
-    @media screen and (min-width: 1000px) {
-      #topper header h1 {
-        font-size: 7em; } }
-  #topper header p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-style: italic;
-    font-size: 1.5em;
-    text-align: center; }
+  background-position: center center; }
+@media screen and (max-width: 849px) {
+  #topper header {
+    padding: 30px; } }
+@media screen and (min-width: 850px) {
+  #topper header {
+    padding: 50px 0 90px 0; } }
+#topper header h1 {
+  font-weight: 400;
+  background-size: 100%;
+  color: #fff;
+  text-align: center; }
+  @media screen and (max-width: 599px) {
+    #topper header h1 {
+      font-size: 2.5em;
+      min-height: 62px; } }
+  @media screen and (min-width: 600px) and (max-width: 999px) {
+    #topper header h1 {
+      font-size: 5em;
+      min-height: 124px; } }
+  @media screen and (min-width: 1000px) {
+    #topper header h1 {
+      font-size: 7em;
+      min-height: 174px; } }
+#topper header p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-style: italic;
+  text-align: center; }
+  @media screen and (max-width: 599px) {
+    #topper header p {
+      font-size: 1.2em; } }
+  @media screen and (min-width: 600px) {
+    #topper header p {
+      font-size: 1.5em; } }
 #topper nav {
   background-color: #000;
   bottom: 0;
@@ -515,16 +532,28 @@
           height: 100%; } }
 #startPage #recent {
   margin: auto;
-  max-width: 1400px;
-  margin-top: 50px; }
+  max-width: 1400px; }
   @media screen and (min-width: 1000px) {
     #startPage #recent {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      margin-top: 50px; } }
   #startPage #recent article {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    position: relative; }
+    #startPage #recent article .pLink {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 10; }
+    @media screen and (max-width: 999px) {
+      #startPage #recent article {
+        padding: 20px;
+        box-sizing: border-box; } }
     @media screen and (min-width: 1000px) {
       #startPage #recent article {
         max-width: 30%; } }
@@ -541,7 +570,8 @@
         float: left; }
         #startPage #recent article .tags_section .tags a {
           font-family: "Montserrat", sans-serif;
-          font-weight: 400; }
+          font-weight: 400;
+          text-decoration: none; }
       #startPage #recent article .tags_section .section {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
@@ -553,31 +583,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-#startPage article {
-  margin-bottom: 30px; }
-  @media screen and (max-width: 640px) {
-    #startPage article {
-      width: 100%; } }
-  @media screen and (min-width: 641px) {
-    #startPage article {
-      max-width: 30%; } }
-  #startPage article a {
-    text-decoration: none; }
-  #startPage article h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    margin-top: 15px;
-    color: #7f8c8d; }
-    @media screen and (min-width: 641px) {
-      #startPage article h2 {
-        font-size: 1.5em; } }
-  #startPage article picture {
-    display: block;
-    margin-top: 10px; }
-    #startPage article picture img {
-      display: block;
-      width: 100%; }
 
 * {
   margin: 0;
