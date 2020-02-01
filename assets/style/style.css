@@ -308,6 +308,16 @@
       margin-bottom: 15px; }
     #postPage #body ul li h3 {
       display: block; }
+    @media screen and (max-width: 770px) {
+      #postPage #body .yt {
+        height: 45vw; } }
+    @media screen and (min-width: 771px) {
+      #postPage #body .yt {
+        height: 450px; } }
+    #postPage #body .yt iframe {
+      height: 100%; }
+    #postPage #body .cke_chrome img {
+      max-width: 100%; }
     #postPage #body p,
     #postPage #body ul,
     #postPage #body ol,
@@ -431,8 +441,8 @@
   outline: none; }
 
 #edit {
-  max-width: 674px;
-  margin: auto; }
+  margin: auto;
+  max-width: 674px; }
 
 .cke_chrome {
   border: none !important;
@@ -542,7 +552,8 @@
   #startPage #recent article {
     display: inline-block;
     vertical-align: top;
-    position: relative; }
+    position: relative;
+    margin-top: 40px; }
     #startPage #recent article .pLink {
       position: absolute;
       left: 0;
@@ -563,7 +574,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         font-size: 1.4em;
-        color: #fff; }
+        color: #333; }
     #startPage #recent article .tags_section {
       overflow: hidden; }
       #startPage #recent article .tags_section .tags {

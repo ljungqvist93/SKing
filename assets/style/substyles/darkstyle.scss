@@ -21,7 +21,7 @@ body{
 }
 
 article{
-	h2{
+	h2, h3, p{
 		color:#fff !important;
 	}
 }
@@ -29,6 +29,18 @@ article{
 #toolPlacement{
 	.fal{
 		color:#fff;
+	}
+}
+
+#body{
+	h2,h3,p{
+		color:#fff;
+	}
+
+	ul{
+		li{
+			color:#fff;
+		}
 	}
 }
 

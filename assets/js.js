@@ -14,3 +14,5 @@ $('.fa-bars').click(function () {
 $('#imageToggler').click(function () {
 	$('#imageIframe').slideToggle('fast');
 });
+
+$('iframe[src*="youtube"]').wrap("<div class='yt'></div>");

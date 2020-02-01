@@ -32,6 +32,18 @@ h3 {
 ul li h3 {
   display: block; }
 
+@media screen and (max-width: 770px) {
+  .yt {
+    height: 45vw; } }
+@media screen and (min-width: 771px) {
+  .yt {
+    height: 450px; } }
+.yt iframe {
+  height: 100%; }
+
+.cke_chrome img {
+  max-width: 100%; }
+
 p,
 ul,
 ol,

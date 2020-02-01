@@ -29,7 +29,7 @@
         <ul id="cinema" class="inline">
             <?php foreach ($cinema as $sins): ?>
                 <li>
-                    <a href="">
+                    <a href="post.php?slug=<?= $sins['slug']; ?>">
                         <div class="shadow"></div>
                         <picture>
                             <img src="<?= $sins['thumbImage']; ?>" alt="">

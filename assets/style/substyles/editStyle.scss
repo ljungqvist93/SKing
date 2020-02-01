@@ -43,6 +43,24 @@ ul{
 	}
 }
 
+.yt{
+	@media screen and (max-width:770px){
+		height:45vw;
+	}
+	@media screen and (min-width:771px){
+		height: 450px;
+	}
+	iframe{
+		height:100%;
+	}
+}
+
+.cke_chrome{
+	img{
+		max-width:100%;
+	}
+}
+
 p,
 ul,
 ol,
