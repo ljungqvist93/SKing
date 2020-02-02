@@ -103,6 +103,50 @@
     #mobileMenu {
       display: none; } }
 
+#large .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  left: 0;
+  right: 0; }
+  #large .slick-dots li {
+    display: inline-block;
+    margin-right: 20px; }
+    #large .slick-dots li:last-of-type {
+      margin-right: 0; }
+    #large .slick-dots li button {
+      border: none;
+      background: #fff;
+      padding: 1px 4px;
+      color: #fff;
+      border-radius: 100%; }
+#large #caruselle {
+  max-width: 100%;
+  position: relative; }
+  @media screen and (max-width: 600px) {
+    #large #caruselle {
+      display: none; } }
+  #large #caruselle div {
+    height: 44.5vw;
+    width: 100%;
+    position: relative; }
+  #large #caruselle img {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    left: -100%;
+    right: -100%;
+    top: 0;
+    bottom: 0; }
+@media screen and (max-width: 600px) {
+  #large #mScale {
+    position: relative; }
+    #large #mScale img {
+      width: 100%; } }
+@media screen and (min-width: 601px) {
+  #large #mScale {
+    display: none; } }
 @media screen and (max-width: 1160px) {
   #large header {
     padding: 0 30px; } }

@@ -16,3 +16,14 @@ $('#imageToggler').click(function () {
 });
 
 $('iframe[src*="youtube"]').wrap("<div class='yt'></div>");
+
+$(document).ready(function(){
+    $('#caruselle').slick({
+        prevArrow: false,
+        nextArrow: false,
+        dots: true,
+        autoplay:true,
+        autoplaySpeed:3000,
+        mobileFirst: true
+    });
+});

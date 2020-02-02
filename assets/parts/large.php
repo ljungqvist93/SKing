@@ -1,9 +1,12 @@
 <div class="wrapper" id="large">
-	<picture>
-		<source srcset="<?= $post['thumbImage']; ?>" media="(max-width:640px)">
-		<source srcset="<?= $post['coverImage']; ?>" media="(min-width:641px)">
-		<img src="<?= $post['thumbImage']; ?>" alt="">
-	</picture>
+    <div id="caruselle">
+        <?php foreach ($covers as $cover): ?>
+            <div><img src="../engine/image/<?= $cover['imageName']; ?>" alt=""></div>
+        <?php endforeach; ?>
+    </div>
+    <div id="mScale">
+        <img src="<?php echo $post['thumbImage']; ?>" alt="">
+    </div>
 	<header>
 		<div class="holder">
 			<div id="timeTagsSection" class="large">
