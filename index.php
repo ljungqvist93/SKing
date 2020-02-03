@@ -7,7 +7,7 @@
     ")->fetchAll(PDO::FETCH_ASSOC);
 
     $rest = $db->query("
-        SELECT * FROM posts WHERE published = 1 ORDER BY created_at DESC LIMIT 3,10
+        SELECT * FROM posts WHERE published = 1 ORDER BY created_at DESC LIMIT 3,9
     ")->fetchAll(PDO::FETCH_ASSOC);
 
     $fonts = $db->query(
@@ -17,8 +17,11 @@
     $quotes = $db->query(
         "SELECT * FROM quotes ORDER BY rand() LIMIT 1" 
     )->fetchAll(PDO::FETCH_ASSOC);
-    $bg = $db->query(
-        "SELECT * FROM bg ORDER BY rand() LIMIT 1" 
+    $whiteBG = $db->query(
+        "SELECT * FROM bg WHERE theme = 1 ORDER BY rand() LIMIT 1" 
+    )->fetchAll(PDO::FETCH_ASSOC);
+    $blackBG = $db->query(
+        "SELECT * FROM bg WHERE theme = 0 ORDER BY rand() LIMIT 1" 
     )->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>

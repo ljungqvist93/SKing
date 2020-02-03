@@ -1,9 +1,15 @@
 <section id="topper">
     <div id="bg" style="
-    <?php foreach ($bg as $bg): ?>
-        background-image:url('assets/<?= $bg['name']; ?>');
-    <?php endforeach; ?>
-    ">
+        <?php if($theme === 'dark'): ?>
+            <?php foreach ($blackBG as $bbg): ?>
+                background-image:url('assets/<?= $bbg['name']; ?>');
+            <?php endforeach; ?>
+        <?php elseif($theme === 'light'): ?>
+            <?php foreach ($whiteBG as $wbg): ?>
+                background-image:url('assets/<?= $wbg['name']; ?>');
+            <?php endforeach; ?>
+        <?php endif; ?>
+        ">
         <header>
             <?php foreach ($fonts as $font): ?>
                 <link href="https://fonts.googleapis.com/css?family=<?php echo  $font['url']; ?>&display=swap" rel="stylesheet">
