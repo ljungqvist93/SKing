@@ -142,7 +142,7 @@ include 'connect.php';
 <div id="frameholder">
 <iframe id="imageIframe" src="images.php?id=<?= $postId; ?>&cover=0"></iframe>
 </div>
-<script src="../ckeditor/ckeditor.js"></script>
+<script src="https://cyberlad.com/ckeditor/ckeditor.js"></script>
 <div id="postAdmin">
     <div id="toolPlacement">
         <i class="fal fa-bars" id="toggleAdmin"></i>

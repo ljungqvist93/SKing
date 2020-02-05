@@ -1,21 +1,43 @@
+.twitter-tweet {
+  max-width: 500px !important;
+  margin: auto;
+  padding-bottom: 30px; }
+
 p {
-  font-family: 'Gelasio', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 30px; }
 
-ul {
-  font-family: 'Gelasio', serif;
+ul li {
+  list-style-type: none;
+  margin-top: 50px;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
-  font-size: 1.4em; }
-  ul li {
-    list-style-type: none;
-    margin-top: 50px; }
-    ul li h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 1em;
-      margin-bottom: 15px; }
+  font-size: 1.2em; }
+  ul li h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.6em;
+    margin-bottom: 15px; }
+
+blockquote {
+  border: solid;
+  display: block;
+  background-color: #ff7675;
+  box-sizing: border-box;
+  font-style: italic; }
+  @media screen and (max-width: 849px) {
+    blockquote {
+      padding: 10px; } }
+  @media screen and (min-width: 850px) {
+    blockquote {
+      padding: 30px; } }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+
+strong {
+  font-weight: 900; }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -28,6 +50,9 @@ h3 {
   font-weight: 900;
   font-size: 1.6em;
   margin-bottom: 15px; }
+
+a {
+  font-family: "Roboto Slab", serif; }
 
 ul li h3 {
   display: block; }

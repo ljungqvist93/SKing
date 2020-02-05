@@ -323,23 +323,42 @@
       color: #333; }
   #postPage #body {
     padding: 30px; }
+    #postPage #body .twitter-tweet {
+      max-width: 500px !important;
+      margin: auto;
+      padding-bottom: 30px; }
     #postPage #body p {
-      font-family: 'Gelasio', serif;
+      font-family: "Roboto Slab", serif;
       font-weight: 400;
-      font-size: 1.4em;
+      font-size: 1.2em;
       margin-bottom: 30px; }
-    #postPage #body ul {
-      font-family: 'Gelasio', serif;
+    #postPage #body ul li {
+      list-style-type: none;
+      margin-top: 50px;
+      font-family: "Roboto Slab", serif;
       font-weight: 400;
-      font-size: 1.4em; }
-      #postPage #body ul li {
-        list-style-type: none;
-        margin-top: 50px; }
-        #postPage #body ul li h3 {
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 900;
-          font-size: 1em;
-          margin-bottom: 15px; }
+      font-size: 1.2em; }
+      #postPage #body ul li h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 1.6em;
+        margin-bottom: 15px; }
+    #postPage #body blockquote {
+      border: solid;
+      display: block;
+      background-color: #ff7675;
+      box-sizing: border-box;
+      font-style: italic; }
+      @media screen and (max-width: 849px) {
+        #postPage #body blockquote {
+          padding: 10px; } }
+      @media screen and (min-width: 850px) {
+        #postPage #body blockquote {
+          padding: 30px; } }
+      #postPage #body blockquote p:last-of-type {
+        margin-bottom: 0; }
+    #postPage #body strong {
+      font-weight: 900; }
     #postPage #body h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
@@ -350,6 +369,8 @@
       font-weight: 900;
       font-size: 1.6em;
       margin-bottom: 15px; }
+    #postPage #body a {
+      font-family: "Roboto Slab", serif; }
     #postPage #body ul li h3 {
       display: block; }
     @media screen and (max-width: 770px) {

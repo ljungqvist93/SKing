@@ -1,24 +1,55 @@
+$regFont: 'Roboto Slab', serif;
+.twitter-tweet{
+	max-width: 500px !important;
+	margin:auto;
+	padding-bottom: 30px;
+}
 p{
-	font-family: 'Gelasio', serif;
+	font-family: $regFont;
 	font-weight:400;
-	font-size:1.4em;
+	font-size:1.2em;
 	margin-bottom: 30px;
 }
 ul{
-	font-family: 'Gelasio', serif;
-	font-weight:400;
-	font-size:1.4em;
 	li{
 		list-style-type: none;
 		margin-top: 50px;
+		font-family: $regFont;
+		font-weight:400;
+		font-size:1.2em;
 
 		h3{
 			font-family: 'Montserrat', sans-serif;
 			font-weight:900;
-			font-size:1em;
+			font-size:1.6em;
 			margin-bottom: 15px;
 		}
 	}
+}
+
+blockquote{
+	@media screen and (max-width:849px){
+		padding:10px;
+	}
+	@media screen and (min-width:850px){
+		padding:30px;
+	}
+	border:solid;
+	display: block;
+	background-color: #ff7675;
+	box-sizing: border-box;
+
+	font-style: italic;
+
+	p{
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}
+
+strong{
+	font-weight:900;
 }
 
 h2{
@@ -33,6 +64,10 @@ h3{
 	font-weight:900;
 	font-size:1.6em;
 	margin-bottom: 15px;
+}
+
+a{
+	font-family: $regFont;
 }
 
 ul{
