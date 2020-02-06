@@ -115,6 +115,10 @@
 						margin-left: 15px;
 						margin-top: 15px;
 						li{
+							a{
+								color:#fff;
+								text-decoration: none;
+							}
 						}
 					}
 					#time{
@@ -124,6 +128,11 @@
 						color:#fff;
 
 						margin-top: 30px;
+					}
+					#mTime{
+						font-family: $headFont;
+						font-weight:400;
+						color:#fff;
 					}
 				}
 			}

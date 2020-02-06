@@ -32,6 +32,20 @@
     }
 
     $size = $post['size'];
+    $whiteBG = $db->query(
+        "SELECT * FROM bg WHERE theme = 1 ORDER BY rand() LIMIT 1" 
+    )->fetchAll(PDO::FETCH_ASSOC);
+    $blackBG = $db->query(
+        "SELECT * FROM bg WHERE theme = 0 ORDER BY rand() LIMIT 1" 
+    )->fetchAll(PDO::FETCH_ASSOC);
+
+    $fonts = $db->query(
+        "SELECT * FROM topfonts ORDER BY rand() LIMIT 1" 
+    )->fetchAll(PDO::FETCH_ASSOC);
+
+    $quotes = $db->query(
+        "SELECT * FROM quotes ORDER BY rand() LIMIT 1" 
+    )->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">

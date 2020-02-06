@@ -27,3 +27,9 @@ $(document).ready(function(){
         mobileFirst: true
     });
 });
+
+$("#text").on("load", function() {
+  let head = $("#text").contents().find("head");
+  let css = '<style>color:#fff;</style>';
+  $(head).append(css);
+});

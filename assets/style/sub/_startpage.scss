@@ -40,6 +40,16 @@
 				position: relative;
 				overflow: hidden;
 				height:23vw;
+				a{
+					position: absolute;
+					left: 0;
+					right: 0;
+					z-index: 10;
+					top: 0;
+					bottom: 0;
+					margin:auto;
+					display: block;
+				}
 				&:before{
 					content: "";
 				    position: absolute;
