@@ -1,5 +1,10 @@
 #twosides{
 	#pic_head{
+		h1{
+			font-family: 'Montserrat', sans-serif;
+			font-weight:900;
+			font-size:3em;
+		}
 		@media screen and (max-width:799px){
 			picture{
 				img{

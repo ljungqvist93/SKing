@@ -30,11 +30,6 @@ article{
 	}
 }
 
-#toolPlacement{
-	.fal{
-		color:#fff;
-	}
-}
 
 #body{
 	h2,h3,p{
@@ -45,6 +40,12 @@ article{
 		li{
 			color:#fff;
 		}
+	}
+}
+
+#pic_head{
+	h1{
+		color:#fff;
 	}
 }
 
@@ -63,10 +64,6 @@ article{
 			color:#fff;
 		}
 	}
-}
-
-.fa-bars{
-	color:#fff !important;
 }
 #mobileMenu{
 	background-color:#000;
