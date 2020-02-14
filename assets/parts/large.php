@@ -1,4 +1,5 @@
 <div class="wrapper" id="large">
+    <?php if (count($covers) > 1): ?>
     <div id="caruselle">
         <?php foreach ($covers as $cover): ?>
             <div><img src="../engine/image/<?= $cover['imageName']; ?>" alt=""></div>
@@ -7,6 +8,11 @@
     <div id="mScale">
         <img src="<?php echo $post['thumbImage']; ?>" alt="">
     </div>
+    <?php else: ?>
+        <?php foreach ($covers as $cover): ?>
+            <div id="singleImage"><img src="../engine/image/<?= $cover['imageName']; ?>" alt=""></div>
+        <?php endforeach; ?>
+    <?php endif; ?>
 	<header>
 		<div class="holder">
 			<div id="timeTagsSection" class="large">

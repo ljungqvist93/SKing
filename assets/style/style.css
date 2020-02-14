@@ -127,7 +127,7 @@
     #large #caruselle {
       display: none; } }
   #large #caruselle div {
-    height: 44.5vw;
+    height: 50vw;
     width: 100%;
     position: relative; }
   #large #caruselle img {
@@ -139,6 +139,8 @@
     right: -100%;
     top: 0;
     bottom: 0; }
+#large #singleImage img {
+  width: 100%; }
 @media screen and (max-width: 600px) {
   #large #mScale {
     position: relative; }
