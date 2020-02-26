@@ -1,6 +1,20 @@
 
 #startPage{
 	#cinema{
+		li{
+			a{
+				&:before{
+					content: "";
+				    position: absolute;
+				    display: block;
+				    height: 100%;
+				    width: 100%;
+				    background: rgba(0,0,0,0.05) linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0) 30%,rgba(0,0,0,0.75) 100%);
+				    bottom: 0;
+				    z-index: 5;
+				}
+			}
+		}
 		@media screen and (max-width:899px){
 			width:100%;
 			li{
@@ -12,12 +26,13 @@
 				header{
 					position: absolute;
 					bottom: 0;
-					padding:30px;
+					padding:20px 30px;
+					z-index: 10;
 					h3{
 						font-family: $headFont;
 						font-weight:400;
 						color:#fff;
-						font-size:1.4em;
+						font-size:1.1em;
 					}
 				}
 				picture{
@@ -49,16 +64,16 @@
 					bottom: 0;
 					margin:auto;
 					display: block;
-				&:before{
-					content: "";
-				    position: absolute;
-				    display: block;
-				    height: 100%;
-				    width: 100%;
-				    background: rgba(0,0,0,0.05) linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0) 30%,rgba(0,0,0,0.75) 100%);
-				    bottom: 0;
-				    z-index: 5;
-				}
+					&:before{
+						content: "";
+					    position: absolute;
+					    display: block;
+					    height: 100%;
+					    width: 100%;
+					    background: rgba(0,0,0,0.05) linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0) 30%,rgba(0,0,0,0.75) 100%);
+					    bottom: 0;
+					    z-index: 5;
+					}
 				}
 				header{
 					position: absolute;
@@ -67,9 +82,15 @@
 					z-index: 10;
 					h3{
 						font-family: $headFont;
-						font-weight:400;
-						font-size:1.4em;
+						font-weight:900;
 						color:#fff;
+
+						@media screen and (max-width:1200px){
+							font-size:1.5em;
+						}
+						@media screen and (min-width:1201px){
+							font-size:2em;
+						}
 					}
 				}
 				picture{

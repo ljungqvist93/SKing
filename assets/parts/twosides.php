@@ -27,4 +27,5 @@
 	<div id="body">
 		<?= $post['postText']; ?>
 	</div>
+	<?php include 'comments.php'; ?>                            
 </div>

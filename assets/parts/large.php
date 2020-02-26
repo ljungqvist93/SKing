@@ -43,4 +43,5 @@
 	<section id="body">
 		<?= $post['postText']; ?>
 	</section>
+	<?php include 'comments.php'; ?>        
 </div>

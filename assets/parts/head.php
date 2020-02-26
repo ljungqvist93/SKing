@@ -30,7 +30,7 @@
  ?>
 <head>
 	<meta charset="UTF-8">
-	<title>Daniel Ljungqvist</title>
+	<title>Cyberlad</title>
 	<link rel="stylesheet" href="/assets/style/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
