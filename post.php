@@ -46,23 +46,26 @@
     $quotes = $db->query(
         "SELECT * FROM quotes ORDER BY rand() LIMIT 1" 
     )->fetchAll(PDO::FETCH_ASSOC);
+
+    $url = 'https://www.cyberlad.com/post.php?slug=' . $slug;
 ?>
 <!DOCTYPE html>
-<title>Cyberlad - <?= $post['title']; ?></title>
-<meta property="og:type" content="article" />
-<meta property="og:title" content="<?= $post['title']; ?>" />
-<meta property="og:image" content="<?= $post['coverImage']; ?>" />
-<meta property="og:url" content="https://www.danielljungqvist.se/post.php?slug=<?= $post['slug']; ?>" />
-<meta name="author" content="danielljungqvist.se" />
-
-<meta name="twitter:title" content="<?= $post['title']; ?>" />
-<meta name="twitter:description" content="" />
-<meta name="twitter:site" content="@danielljungqvist" />
-<meta name="twitter:creator" content="@ljungqvist93" />
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="<?= $post['thumbImage']; ?>">
 <html lang="en">
 	<?php include 'assets/parts/head.php'; ?>
+        <title>Cyberlad - <?= $post['title']; ?></title>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="<?= $post['title']; ?>" />
+        <meta property="og:image" content="<?= $post['thumbImage']; ?>" />
+        <meta property="og:url" content="https://www.danielljungqvist.se/post.php?slug=<?= $post['slug']; ?>" />
+        <meta name="author" content="danielljungqvist.se" />
+
+        <meta name="twitter:title" content="<?= $post['title']; ?>" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:site" content="@danielljungqvist" />
+        <meta name="twitter:creator" content="@ljungqvist93" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="<?= $post['thumbImage']; ?>">
+    </head>
 	<body id="postPage">
 		<?php if ($size == 1): ?>
 			<?php include 'assets/parts/large.php'; ?>
@@ -75,13 +78,17 @@
             <div class="wrapper">
                 <ul class="inline overflow">
                     <li>
-                        <i class="fab fa-facebook-f"></i>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cyberlad.com/post.php?slug%3D<?= $post['slug']; ?>">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </li>
                     <li>
                         <i class="fab fa-twitter"></i>
                     </li>
                     <li>
-                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cyberlad.com/post.php?slug%3D<?= $post['slug']; ?>">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </li>
                     <li>
                         <i class="fab fa-reddit"></i>

@@ -1,4 +1,8 @@
 <div class="wrapper" id="twosides">
+	<a href="index.php" id="return">
+		<i class="fal fa-chevron-circle-left"></i>
+		To startpage
+	</a>
 	<div id="pic_head">
 		<picture>
 			<div class="filter"></div>
