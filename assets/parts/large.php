@@ -1,4 +1,8 @@
 <div class="wrapper" id="large">
+	<a href="index.php" id="return">
+		<i class="fal fa-chevron-circle-left"></i>
+		To startpage
+	</a>
     <?php if (count($covers) > 1): ?>
     <div id="caruselle">
         <?php foreach ($covers as $cover): ?>

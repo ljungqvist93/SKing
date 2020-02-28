@@ -71,4 +71,22 @@
 		<?php elseif ($size == 3): ?>
 			<?php include 'assets/parts/twosides.php'; ?>
 		<?php endif; ?>
+        <div id="share">
+            <div class="wrapper">
+                <ul class="inline overflow">
+                    <li>
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-reddit"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
 	<?php include 'assets/parts/bottom.php'; ?>

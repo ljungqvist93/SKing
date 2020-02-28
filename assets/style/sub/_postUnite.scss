@@ -15,6 +15,91 @@
 	}
 }
 
+@media screen and (max-width:800px){
+	#return{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:400;
+		font-size:1em;
+
+		display: block;
+		text-align: center;
+		color:#fff;
+		text-decoration: none;
+		padding: 10px 0;
+		background-color: #333;
+
+		.fal{
+			margin-right: 10px;
+		}
+	}
+}
+@media screen and (min-width:801px){
+	#return{
+		display: none;
+	}
+}
+
+#share{
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	left: 0;
+	right: 0;
+
+	.fa-facebook-f{
+		background-color: #39579B;
+	}
+	.fa-twitter{
+		background-color: #2CA5DC;
+	}
+	.fa-linkedin{
+		background-color: #0174B0;
+	}
+	.fa-reddit{
+		background-color: #F84201;
+	}
+
+	.fab{
+		color:#fff;
+		text-align: center;
+	}
+
+	ul{
+		overflow: hidden;
+	}
+
+	li{
+		float:left;
+	}
+
+	@media screen and (max-width:800px){
+		.wrapper{
+			display: block;
+			width: 100%;
+			li{
+				width:25%;
+				.fab{
+					width:100%;
+				padding:3px 0;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 801px){
+		ul{
+			float:right;
+			.fab{
+				padding:10px;
+				width: 35px;
+			}
+		}
+		.wrapper{
+			max-width:80%;
+			margin:auto;
+		}
+	}
+}
+
 #large,
 #small{
 	header{

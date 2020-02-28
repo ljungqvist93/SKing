@@ -411,6 +411,62 @@
     #postPage #body p + .xlarge {
       margin-bottom: 0; }
 
+@media screen and (max-width: 800px) {
+  #return {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    background-color: #333; }
+    #return .fal {
+      margin-right: 10px; } }
+@media screen and (min-width: 801px) {
+  #return {
+    display: none; } }
+#share {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  left: 0;
+  right: 0; }
+  #share .fa-facebook-f {
+    background-color: #39579B; }
+  #share .fa-twitter {
+    background-color: #2CA5DC; }
+  #share .fa-linkedin {
+    background-color: #0174B0; }
+  #share .fa-reddit {
+    background-color: #F84201; }
+  #share .fab {
+    color: #fff;
+    text-align: center; }
+  #share ul {
+    overflow: hidden; }
+  #share li {
+    float: left; }
+  @media screen and (max-width: 800px) {
+    #share .wrapper {
+      display: block;
+      width: 100%; }
+      #share .wrapper li {
+        width: 25%; }
+        #share .wrapper li .fab {
+          width: 100%;
+          padding: 3px 0; } }
+  @media screen and (min-width: 801px) {
+    #share ul {
+      float: right; }
+      #share ul .fab {
+        padding: 10px;
+        width: 35px; }
+    #share .wrapper {
+      max-width: 80%;
+      margin: auto; } }
+
 #large header,
 #small header {
   max-width: 1100px;
