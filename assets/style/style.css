@@ -759,7 +759,8 @@
   #startPage #recent article {
     display: inline-block;
     vertical-align: top;
-    position: relative; }
+    position: relative;
+    margin-bottom: 40px; }
     #startPage #recent article .pLink {
       position: absolute;
       left: 0;
