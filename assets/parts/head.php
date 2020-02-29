@@ -36,9 +36,20 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Roboto+Slab:400,900&display=swap" rel="stylesheet" />
     <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <link rel="icon" href="https://cyberlad.com/assets/favicon.PNG" type="image/gif" sizes="16x16">
+
     <meta name="description" content="Daniel Ljungqvist provides really rad, easy and interesting guides and articles about technology, IT, and much more!" />
     <meta name=”theme-color” content="#000000">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90622404-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90622404-5');
+    </script>
 
     <script>
         function getCookie(cname) {
