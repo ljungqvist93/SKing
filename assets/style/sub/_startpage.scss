@@ -112,17 +112,23 @@
 	#recent{
 		margin:auto;
 		max-width:1400px;
+		@media screen and (max-width:650px){
+			width: 100%;
+		}
+		@media screen and (min-width:651px) and  (max-width: 999px){
+			width: 640px;
+		}
 		@media screen and (min-width:1000px){
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
 			margin-top: 50px;
+			padding: 0 30px;
 		}
 		article{
 			display: inline-block;
 			vertical-align: top;
 			position: relative;
-			margin-top: 40px;
 			.pLink{
 				position: absolute;
 				left: 0;
@@ -150,12 +156,23 @@
 			}
 			.tags_section{
 				overflow: hidden;
+				margin-top:10px;
+				font-size:.9em;
 				.tags{
 					float:left;
+					position: relative;
+					z-index: 10;
+					li{
+						float:left;
+						margin-right: 5px;
+					}
 					a{
 						font-family: $headFont;
 						font-weight:400;
 						text-decoration: none;
+						&:hover{
+							color:#fff;
+						}
 					}
 				}
 				.section{

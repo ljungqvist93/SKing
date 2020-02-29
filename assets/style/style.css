@@ -743,17 +743,23 @@
 #startPage #recent {
   margin: auto;
   max-width: 1400px; }
+  @media screen and (max-width: 650px) {
+    #startPage #recent {
+      width: 100%; } }
+  @media screen and (min-width: 651px) and (max-width: 999px) {
+    #startPage #recent {
+      width: 640px; } }
   @media screen and (min-width: 1000px) {
     #startPage #recent {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-top: 50px; } }
+      margin-top: 50px;
+      padding: 0 30px; } }
   #startPage #recent article {
     display: inline-block;
     vertical-align: top;
-    position: relative;
-    margin-top: 40px; }
+    position: relative; }
     #startPage #recent article .pLink {
       position: absolute;
       left: 0;
@@ -776,13 +782,22 @@
         font-size: 1.4em;
         color: #333; }
     #startPage #recent article .tags_section {
-      overflow: hidden; }
+      overflow: hidden;
+      margin-top: 10px;
+      font-size: .9em; }
       #startPage #recent article .tags_section .tags {
-        float: left; }
+        float: left;
+        position: relative;
+        z-index: 10; }
+        #startPage #recent article .tags_section .tags li {
+          float: left;
+          margin-right: 5px; }
         #startPage #recent article .tags_section .tags a {
           font-family: "Montserrat", sans-serif;
           font-weight: 400;
           text-decoration: none; }
+          #startPage #recent article .tags_section .tags a:hover {
+            color: #fff; }
       #startPage #recent article .tags_section .section {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;

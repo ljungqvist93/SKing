@@ -27,6 +27,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php include 'assets/parts/head.php'; ?>
+    <title>Cyberlad</title>
+    </head>
 	<body id="startPage">
         <?php include 'assets/parts/topper.php'; ?>
         <ul id="cinema" class="inline">
