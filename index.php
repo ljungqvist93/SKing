@@ -7,7 +7,7 @@
     ")->fetchAll(PDO::FETCH_ASSOC);
 
     $rest = $db->query("
-        SELECT * FROM posts WHERE published = 1 ORDER BY created_at DESC LIMIT 3,9
+        SELECT * FROM posts WHERE published = 1 ORDER BY created_at DESC LIMIT 3,25
     ")->fetchAll(PDO::FETCH_ASSOC);
 
     $fonts = $db->query(

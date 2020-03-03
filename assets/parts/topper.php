@@ -11,6 +11,7 @@
         <?php endif; ?>
         ">
         <header>
+            <a href="index.php" id="toStart"></a>
             <?php foreach ($fonts as $font): ?>
                 <link href="https://fonts.googleapis.com/css?family=<?php echo  $font['url']; ?>&display=swap" rel="stylesheet">
                 <h1 style="font-family: <?= $font['name']; ?>">CYBERLAD</h1>

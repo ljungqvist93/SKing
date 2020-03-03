@@ -33,3 +33,8 @@ $("#text").on("load", function() {
   let css = '<style>color:#fff;</style>';
   $(head).append(css);
 });
+
+
+$('#trashToggle').on('click', function () {
+    $('#trashWall').slideToggle('fast');
+});

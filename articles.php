@@ -1,15 +1,11 @@
-<?= include 'engine/connect.php';
+<?php
 
+    include 'engine/connect.php';
 
-    $rest = $db->prepare("
-        SELECT posts.*
-        FROM posts
-        LEFT JOIN post_tag ON posts.id = post_tag.post_id
-        WHERE section = 1 AND published = 1
-        ORDER BY created_at DESC
-    ");
-    $rest->execute(['tag_id' => $tagId]);
-    $rest = $rest->fetchAll(PDO::FETCH_ASSOC);
+    $rest = $db->query("
+        SELECT * FROM posts WHERE published = 1 AND section = 1 ORDER BY created_at DESC
+    ")->fetchAll(PDO::FETCH_ASSOC);
+
     $fonts = $db->query(
         "SELECT * FROM topfonts ORDER BY rand() LIMIT 1" 
     )->fetchAll(PDO::FETCH_ASSOC);
@@ -23,6 +19,7 @@
     $blackBG = $db->query(
         "SELECT * FROM bg WHERE theme = 0 ORDER BY rand() LIMIT 1" 
     )->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

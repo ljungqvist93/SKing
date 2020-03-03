@@ -39,7 +39,8 @@ include 'connect.php';
 		$section 		=	$_POST['section'];
 		$slug 			=	$_POST['slug'];
         $postText       =   $_POST['postText'];
-		$size 		=	    $_POST['size'];
+        $size       =       $_POST['size'];
+		$trash 		=	    $_POST['trash'];
 		$id 			= 	$_POST['id'];
 
 		$updatePost = $db->prepare("
@@ -51,8 +52,9 @@ include 'connect.php';
 				thumbImage 		= 		:thumbImage,
 
                 section         =       :section,
-				size 		= 		    :size,
+				size 		    = 		:size,
 				slug 			= 		:slug,
+                trash           =       :trash,
 				postText 		= 		:postText
 			WHERE id = :id
 
@@ -67,7 +69,8 @@ include 'connect.php';
 
             'section'       =>  $section,
 			'size'		    =>	$size,
-			'slug'			=>	$slug,
+            'slug'          =>  $slug,
+			'trash'			=>	$trash,
 			'postText'		=>	$postText
         ]);
 
@@ -146,11 +149,20 @@ include 'connect.php';
 <script src="https://cyberlad.com/ckeditor/ckeditor.js"></script>
 <div id="postAdmin">
     <div id="toolPlacement">
+        <i class="fal fa-pencil-ruler" id="trashToggle"></i>
         <i class="fal fa-bars" id="toggleAdmin"></i>
         <i class="fal fa-image" id="imageToggler"></i>
     </div>
     <main id="edit">
         <form action="">
+            <div id="trashWall">
+                <div class="wrapper">
+                    <textarea name="trash" id="trash"><?= $post['trash']; ?></textarea>
+                    <script>
+                        CKEDITOR.replace('trash');
+                    </script>
+                </div>
+            </div>
             <div class="wrapper">
                 <div id="adminTools">
                     <input type="hidden" name="id" value="<?php echo $post['id']; ?>">

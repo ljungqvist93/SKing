@@ -38,7 +38,7 @@
 
     <link rel="icon" href="https://cyberlad.com/assets/favicon.PNG" type="image/gif" sizes="16x16">
 
-    <meta name="description" content="Daniel Ljungqvist provides really rad, easy and interesting guides and articles about technology, IT, and much more!" />
+    <meta name="description" content="Cyberlad provides awesome and easy-to-follow guides and articles, always for your pleasure!" />
     <meta name=”theme-color” content="#000000">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

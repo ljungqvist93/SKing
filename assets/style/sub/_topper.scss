@@ -6,6 +6,15 @@
 		background-position: center center;
 	}
 	header{
+		position: relative;
+		#toStart{
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10;
+		}
 		@media screen and (max-width:849px){
 			padding: 30px;
 		}

@@ -7,6 +7,18 @@
 #imageIframe{
 	display: none;
 }
+#trashWall{
+	width:100%;
+	padding: 20px 0;
+	position: fixed;
+	max-width:674px;
+	top: 0;
+	background-color: #fff;
+	display: none;
+	textarea{
+		width:100%;
+	}
+}
 #pictures{
 	width: 60%;
 	margin:auto;

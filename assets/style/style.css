@@ -3,41 +3,50 @@
   @media screen and (max-width: 849px) {
     #topper #bg {
       background-size: auto 100%; } }
-@media screen and (max-width: 849px) {
-  #topper header {
-    padding: 30px; } }
-@media screen and (min-width: 850px) {
-  #topper header {
-    padding: 50px 0 90px 0; } }
-#topper header h1 {
-  font-weight: 400;
-  background-size: 100%;
-  color: #ff7675;
-  text-align: center; }
-  @media screen and (max-width: 599px) {
-    #topper header h1 {
-      font-size: 2.5em;
-      min-height: 62px; } }
-  @media screen and (min-width: 600px) and (max-width: 999px) {
-    #topper header h1 {
-      font-size: 5em;
-      min-height: 124px; } }
-  @media screen and (min-width: 1000px) {
-    #topper header h1 {
-      font-size: 7em;
-      min-height: 174px; } }
-#topper header p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #ff7675;
-  font-style: italic;
-  text-align: center; }
-  @media screen and (max-width: 599px) {
-    #topper header p {
-      font-size: 1.2em; } }
-  @media screen and (min-width: 600px) {
-    #topper header p {
-      font-size: 1.5em; } }
+#topper header {
+  position: relative; }
+  #topper header #toStart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10; }
+  @media screen and (max-width: 849px) {
+    #topper header {
+      padding: 30px; } }
+  @media screen and (min-width: 850px) {
+    #topper header {
+      padding: 50px 0 90px 0; } }
+  #topper header h1 {
+    font-weight: 400;
+    background-size: 100%;
+    color: #ff7675;
+    text-align: center; }
+    @media screen and (max-width: 599px) {
+      #topper header h1 {
+        font-size: 2.5em;
+        min-height: 62px; } }
+    @media screen and (min-width: 600px) and (max-width: 999px) {
+      #topper header h1 {
+        font-size: 5em;
+        min-height: 124px; } }
+    @media screen and (min-width: 1000px) {
+      #topper header h1 {
+        font-size: 7em;
+        min-height: 174px; } }
+  #topper header p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #ff7675;
+    font-style: italic;
+    text-align: center; }
+    @media screen and (max-width: 599px) {
+      #topper header p {
+        font-size: 1.2em; } }
+    @media screen and (min-width: 600px) {
+      #topper header p {
+        font-size: 1.5em; } }
 #topper nav {
   background-color: #000;
   bottom: 0;
@@ -586,6 +595,17 @@
 
 #imageIframe {
   display: none; }
+
+#trashWall {
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  max-width: 674px;
+  top: 0;
+  background-color: #fff;
+  display: none; }
+  #trashWall textarea {
+    width: 100%; }
 
 #pictures {
   width: 60%;
