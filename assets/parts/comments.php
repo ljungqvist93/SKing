@@ -1,15 +1,23 @@
 
 	<div id="comments">
 		<div class="wrapper">
-			<h2>That's all folks!</h2>
+			<h2>That's all folks!</h2>	
 			<p>
-				Got any questions or suggestions, or just want to say hi? feel free to write
-				a comment below! I recieve instant mails whenever someone writes a comment,
-				so I'll be able to get back to you as soon as I possibly can!
+				I always strive to get better, and deliver outstanding content for you
+				to enjoy and learn from. If you feel like something is missing, or you
+				didn't quite understand my instructions and need a bit more help to
+				make it work, please leave a comment below. I always get notifications
+				whenever someone comments on my posts, so I'll get back to you as fast 
+				as I possibly can. 
 			</p>
 			<p>
-				If you'd like to reach out the me privately, please send me a mail to
-				ljungqvist[at]gmail.com and I'll get back as soon as possible! :)
+				If you'd like to reach out to me in private, you can either write to 
+				me on LinkedIn, or you can mail me on ljungqvist[at]gmail.com. I am not
+				currently on any other social networks.
+			</p>
+			<p>
+				Thank you so much for reading and enjoying my content, it really means
+				the world to me. Stay awesome, and have a fantastic day! :)
 			</p>
 			<div id="disqus_thread"></div>
 			<script>
