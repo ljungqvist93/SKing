@@ -1,5 +1,10 @@
 <section id="topper">
     <div id="bg" style="
+        <?php if(!$theme): ?>
+            <?php foreach ($blackBG as $bbg): ?>
+                background-image:url('assets/<?= $bbg['name']; ?>');
+            <?php endforeach; ?>
+        <?php endif; ?>
         <?php if($theme === 'dark'): ?>
             <?php foreach ($blackBG as $bbg): ?>
                 background-image:url('assets/<?= $bbg['name']; ?>');
