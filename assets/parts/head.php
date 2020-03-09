@@ -78,13 +78,7 @@
     </script>
 
     <?php if ($subpage == 1): ?>
-        <?php if($theme === 'light'): ?>
-            <link rel="stylesheet" href="../assets/style/substyles/lightstyle.css" type="text/css" />
-        <?php elseif($theme === 'dark'): ?>
             <link rel="stylesheet" href="../assets/style/substyles/darkstyle.css" type="text/css" />
-        <?php elseif(!$theme): ?>
-            <link rel="stylesheet" href="../assets/style/substyles/lightstyle.css" type="text/css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)" />
-        <?php endif; ?>
     <?php else: ?>
         <?php if($theme === 'light'): ?>
             <link rel="stylesheet" href="/assets/style/substyles/lightstyle.css" type="text/css" />

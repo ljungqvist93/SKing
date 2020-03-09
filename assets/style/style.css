@@ -336,6 +336,9 @@
   font-weight: 400;
   font-size: 1.1em; }
 
+.cke_wysiwyg_frame {
+  background-color: #1A1A1B !important; }
+
 #postPage {
   position: relative; }
   #postPage #smallHead {
@@ -366,6 +369,23 @@
         font-weight: 900;
         font-size: 1.2em;
         margin-bottom: 15px; }
+    #postPage #body .separates li {
+      background-color: #333;
+      border: solid 1px #333;
+      padding: 30px;
+      border-radius: 5px; }
+    #postPage #body .happy {
+      background-color: #e1b12c;
+      color: #fff;
+      padding: 5px 10px;
+      margin-top: 10px;
+      display: inline-block; }
+    #postPage #body .methods {
+      background-color: #3498db;
+      color: #fafafa;
+      padding: 5px 10px;
+      margin-top: 10px;
+      display: inline-block; }
     #postPage #body blockquote {
       border: solid;
       display: block;
@@ -444,26 +464,6 @@
       color: #fff;
       margin: 15px;
       font-size: 2em; } }
-.separates li {
-  background-color: #333;
-  border: solid 1px #333;
-  padding: 30px;
-  border-radius: 5px; }
-
-.happy {
-  background-color: #e1b12c;
-  color: #fff;
-  padding: 5px 10px;
-  margin-top: 10px;
-  display: inline-block; }
-
-.methods {
-  background-color: #3498db;
-  color: #fafafa;
-  padding: 5px 10px;
-  margin-top: 10px;
-  display: inline-block; }
-
 #share {
   position: fixed;
   bottom: 0;
@@ -653,7 +653,9 @@
   font-weight: 900;
   border: none;
   width: 674px;
-  outline: none; }
+  outline: none;
+  background-color: #1A1A1B;
+  color: #fff; }
 
 #edit {
   margin: auto;
