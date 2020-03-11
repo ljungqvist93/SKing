@@ -432,7 +432,7 @@
     #postPage #body blockquote,
     #postPage #body h2,
     #postPage #body h3 {
-      max-width: 674px;
+      max-width: 730px;
       margin: auto;
       margin-bottom: 30px; }
     #postPage #body img {
@@ -506,7 +506,7 @@
 
 #large header,
 #small header {
-  max-width: 1100px;
+  max-width: 730px;
   margin: auto; }
   @media screen and (max-width: 1160px) {
     #large header,
@@ -515,7 +515,7 @@
   #large header h1,
   #small header h1 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 900; }
+    font-weight: 600; }
     @media screen and (max-width: 520px) {
       #large header h1,
       #small header h1 {
@@ -527,7 +527,7 @@
     @media screen and (min-width: 971px) {
       #large header h1,
       #small header h1 {
-        font-size: 4.3em; } }
+        font-size: 3.375em; } }
 
 #comments {
   width: 100%;

@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="/assets/style/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Roboto+Slab:400,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900|Roboto+Slab:400,900&display=swap" rel="stylesheet" />
     <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
 
     <link rel="icon" href="https://cyberlad.com/assets/favicon.PNG" type="image/gif" sizes="16x16">
