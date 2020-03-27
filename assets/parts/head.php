@@ -41,6 +41,8 @@
     <meta name="description" content="Cyberlad provides awesome and easy-to-follow guides and articles, always for your pleasure!" />
     <meta name=”theme-color” content="#000000">
 
+    <script data-ad-client="ca-pub-7566748514057450" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90622404-5"></script>
     <script>
@@ -77,14 +79,10 @@
         }
     </script>
 
-    <?php if ($subpage == 1): ?>
-            <link rel="stylesheet" href="../assets/style/substyles/darkstyle.css" type="text/css" />
-    <?php else: ?>
-        <?php if($theme === 'light'): ?>
-            <link rel="stylesheet" href="/assets/style/substyles/lightstyle.css" type="text/css" />
-        <?php elseif($theme === 'dark'): ?>
-            <link rel="stylesheet" href="/assets/style/substyles/darkstyle.css" type="text/css" />
-        <?php elseif(!$theme): ?>
-            <link rel="stylesheet" href="/assets/style/substyles/darkstyle.css" type="text/css" media="(prefers-color-scheme: dark)" />
-        <?php endif; ?>
+    <?php if($theme === 'light'): ?>
+        <link rel="stylesheet" href="/assets/style/substyles/lightstyle.css" type="text/css" />
+    <?php elseif($theme === 'dark'): ?>
+        <link rel="stylesheet" href="/assets/style/substyles/darkstyle.css" type="text/css" />
+    <?php elseif(!$theme): ?>
+        <link rel="stylesheet" href="/assets/style/substyles/darkstyle.css" type="text/css" media="(prefers-color-scheme: dark)" />
     <?php endif; ?>

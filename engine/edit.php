@@ -137,7 +137,7 @@ include 'connect.php';
     
     include '../assets/parts/head.php';    
 ?>
-<body >
+<body style="background-color:#fff !important;">
 <script type="text/javascript">
 	function loadImage(url) {
 		document.getElementById('head_pic').setAttribute('src', url);

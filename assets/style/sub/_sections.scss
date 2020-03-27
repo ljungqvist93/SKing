@@ -1,0 +1,44 @@
+#sections{
+	position: relative;
+
+	#options{
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		max-width:350px;
+		width:350px;
+		background-color: #292929;
+	}
+
+	form{
+		label,
+		input{
+			display: block;
+		}
+		
+	}
+
+	main{
+		position: absolute;
+		right: 0;
+		left: 350px;
+		top: 0;
+		bottom: 0;
+		color:#fff;
+		.wrapper{
+			max-width:80%;
+		}
+		.wrap-now{
+			flex-wrap: wrap;
+		}
+		article{
+			display: inline-block;
+			max-width: 30.3333%;
+			vertical-align: top;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}

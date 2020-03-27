@@ -8,7 +8,7 @@
 		<script src="../assets/js.js"></script>
 <?php else: ?>
 
-		<script src="assets/js.js"></script>
+		<script src="/assets/js.js"></script>
 <?php endif; ?>
 	</html>
 </body>

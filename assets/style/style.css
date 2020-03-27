@@ -336,9 +336,6 @@
   font-weight: 400;
   font-size: 1.1em; }
 
-.cke_wysiwyg_frame {
-  background-color: #1A1A1B !important; }
-
 #postPage {
   position: relative; }
   #postPage #smallHead {
@@ -439,6 +436,12 @@
       display: block; }
     #postPage #body p + .xlarge {
       margin-bottom: 0; }
+
+.bannerAd .adsbygoogle {
+  max-width: 800px;
+  max-height: 300px;
+  margin: auto;
+  margin-top: 30px; }
 
 @media screen and (max-width: 800px) {
   #return {
@@ -654,8 +657,8 @@
   border: none;
   width: 730px;
   outline: none;
-  background-color: #1A1A1B;
-  color: #fff; }
+  background-color: #fff;
+  color: #333; }
 
 #edit {
   margin: auto;
@@ -852,6 +855,37 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+
+#sections {
+  position: relative; }
+  #sections #options {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 350px;
+    width: 350px;
+    background-color: #292929; }
+  #sections form label,
+  #sections form input {
+    display: block; }
+  #sections main {
+    position: absolute;
+    right: 0;
+    left: 350px;
+    top: 0;
+    bottom: 0;
+    color: #fff; }
+    #sections main .wrapper {
+      max-width: 80%; }
+    #sections main .wrap-now {
+      flex-wrap: wrap; }
+    #sections main article {
+      display: inline-block;
+      max-width: 30.3333%;
+      vertical-align: top; }
+      #sections main article img {
+        width: 100%; }
 
 * {
   margin: 0;
